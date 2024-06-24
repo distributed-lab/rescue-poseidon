@@ -13,8 +13,12 @@ derivative = "2"
 
 typemap_rev = "*"
 lazy_static = "1.4"
-franklin_crypto = {package = "franklin-crypto", features = ["plonk"], git = "https://github.com/matter-labs/franklin-crypto", branch = "snark_wrapper"}
+
+# TODO: change to use matter-labs when everything is merged:
+# franklin_crypto = {package = "franklin-crypto", features = ["plonk"], git = "https://github.com/matter-labs/franklin-crypto", branch = "dl-precompiles"}
+franklin_crypto = {package = "franklin-crypto", features = ["plonk"], git = "https://github.com/distributed-lab/franklin-crypto", branch = "feature/ec-and-modexp-precompiles"}
 # franklin_crypto = {package = "franklin-crypto", features = ["plonk"], path = "../franklin-crypto"}
+
 num-bigint = "0.3"
 num-integer = "0.1"
 num-iter = "0.1"
